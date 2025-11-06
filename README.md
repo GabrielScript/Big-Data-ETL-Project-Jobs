@@ -14,13 +14,12 @@ O projeto está organizado da seguinte forma:
 C:\Users\Big Data - Projeto\
 ├───.gitignore
 ├───docker-compose.yml
-├───projeto.py
+
 ├───README.md
 ├───requirements.txt
 └───Projeto Final\
     ├───ETL.ipynb
-    ├───Linkedin_dataset.zip
-    ├───transformed_postings.csv
+     ├───transformed_postings.csv
     └───Linkedin_dataset\
         ├───postings.csv
         ├───companies\
@@ -39,7 +38,6 @@ C:\Users\Big Data - Projeto\
 ```
 
 - **`docker-compose.yml`**: Arquivo de configuração para orquestração de contêineres Docker, que pode ser usado para configurar ambientes de banco de dados ou outros serviços necessários.
-- **`projeto.py`**: Script **não relacionado** a este projeto de análise de vagas do LinkedIn. Ele trata de análise de dados de ações e ingestão em diferentes bancos de dados (Redis, MongoDB, Cassandra, Neo4j).
 - **`Projeto Final/ETL.ipynb`**: Notebook Jupyter contendo todo o processo de ETL (Extração, Transformação e Carga) e análise dos dados.
 - **`Projeto Final/Linkedin_dataset.zip`**: Arquivo compactado com o dataset original.
 - **`Projeto Final/Linkedin_dataset/`**: Diretório contendo o dataset descompactado.
