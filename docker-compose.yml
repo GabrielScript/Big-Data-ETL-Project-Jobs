@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  redis:
+    container_name: redis-container
+    image: redis:7.0.4-alpine
+    hostname: redis
+    ports:
+      - "6379:6379"
+    restart: always
+    
+  mongodb:
+    container_name: mongo-container
+    image: mongo:7.0
+    hostname: mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: mongo
+    ports:
+      - "27017:27017"
+    restart: always
+   
+
+  neo4j:
+    container_name: neo4j-container
+    image: neo4j:latest
+    hostname: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/P4sSw0rD
+    restart: always
+    
+
+  cassandra:
+    container_name: cassandra-container
+    image: cassandra:latest
+    hostname: cassandra
+    environment:
+      CASSANDRA_CLUSTER_NAME: my_cluster
+      CASSANDRA_SEEDS: cassandra
+    ports:
+      - "9042:9042"
+    restart: always
+   
+
+volumes:
+  redis_data:
+  mongodb_data:
+  neo4j_data:
+  cassandra_data:
+
+
+
