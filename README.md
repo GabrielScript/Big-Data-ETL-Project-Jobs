@@ -14,7 +14,6 @@ O projeto está organizado da seguinte forma:
 C:\Users\Big Data - Projeto\
 ├───.gitignore
 ├───docker-compose.yml
-
 ├───README.md
 ├───requirements.txt
 └───Projeto Final\
